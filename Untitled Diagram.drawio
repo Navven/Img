@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-01-12T07:15:52.841Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="j3LGQv9h3pO9NePXRBXC" version="15.5.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-01-12T07:38:54.639Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="JiEnsLoWDHzPRMMxThXm" version="16.2.4" type="github">
   <diagram id="fYH3ScSCED2zXqdq1jgC" name="Page-1">
-    <mxGraphModel dx="2253" dy="848" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2253" dy="769" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -120,10 +120,13 @@
         <mxCell id="MEsgESYLwJpQ1fE5VQMw-36" value="无效展示" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#1A1A1A;" parent="1" vertex="1">
           <mxGeometry x="-470" y="700" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="MEsgESYLwJpQ1fE5VQMw-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontColor=#1A1A1A;" parent="1" source="MEsgESYLwJpQ1fE5VQMw-40" edge="1">
+        <mxCell id="JHU7phzH988oPyzgfWEX-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="MEsgESYLwJpQ1fE5VQMw-40" target="JHU7phzH988oPyzgfWEX-2">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-600" y="950" as="targetPoint" />
+            <mxPoint x="-660" y="950" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="JHU7phzH988oPyzgfWEX-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="MEsgESYLwJpQ1fE5VQMw-40" target="JHU7phzH988oPyzgfWEX-3">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="MEsgESYLwJpQ1fE5VQMw-40" value="后台自动回复关注的用户(记录openid,去重)" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#1A1A1A;" parent="1" vertex="1">
           <mxGeometry x="-660" y="830" width="120" height="60" as="geometry" />
@@ -138,7 +141,25 @@
           <mxGeometry x="-540" y="770" width="80" height="20" as="geometry" />
         </mxCell>
         <mxCell id="MEsgESYLwJpQ1fE5VQMw-48" value="传递openid,结算状态,签名信息,给设备方用于出货" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#1A1A1A;" parent="1" vertex="1">
-          <mxGeometry x="-660" y="950" width="120" height="60" as="geometry" />
+          <mxGeometry x="-650" y="1140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JHU7phzH988oPyzgfWEX-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="JHU7phzH988oPyzgfWEX-2" target="MEsgESYLwJpQ1fE5VQMw-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JHU7phzH988oPyzgfWEX-2" value="有效粉丝+1&lt;br&gt;(结算状态true)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-720" y="950" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="JHU7phzH988oPyzgfWEX-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="JHU7phzH988oPyzgfWEX-3" target="MEsgESYLwJpQ1fE5VQMw-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JHU7phzH988oPyzgfWEX-3" value="重复粉丝+1&lt;br&gt;(结算状态false)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-580" y="950" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="JHU7phzH988oPyzgfWEX-5" value="当前公众号没有该openId" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-760" y="900" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="JHU7phzH988oPyzgfWEX-6" value="当前公众号有该openId" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-590" y="900" width="140" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
