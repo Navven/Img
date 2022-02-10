@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-02-10T03:53:47.711Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="OwkfOeY2fdS1WX29awue" version="16.2.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-02-10T04:00:03.953Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="vUfk7bplPlNGpvB2cwBh" version="16.2.4" type="github">
   <diagram id="pWqOKvmwZdFnGqOZdDLU" name="第 1 页">
     <mxGraphModel dx="1426" dy="712" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -13,10 +13,18 @@
             <mxPoint x="550" y="250" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="Zw-w0zwC9vYJDO_CgV66-23" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="Zw-w0zwC9vYJDO_CgV66-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="Zw-w0zwC9vYJDO_CgV66-4" value="RabbitMQ" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="550" y="210" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Zw-w0zwC9vYJDO_CgV66-5" value="Flink计算具体费用并落库mysql" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Zw-w0zwC9vYJDO_CgV66-19" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="Zw-w0zwC9vYJDO_CgV66-5" target="Zw-w0zwC9vYJDO_CgV66-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Zw-w0zwC9vYJDO_CgV66-5" value="Flink计算具体费用并落库" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="550" y="340" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Zw-w0zwC9vYJDO_CgV66-6" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="Zw-w0zwC9vYJDO_CgV66-5" target="Zw-w0zwC9vYJDO_CgV66-4">
@@ -41,6 +49,21 @@
         </mxCell>
         <mxCell id="Zw-w0zwC9vYJDO_CgV66-16" value="扫码调用" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="250" y="340" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Zw-w0zwC9vYJDO_CgV66-17" value="DTSource" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="665" y="220" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Zw-w0zwC9vYJDO_CgV66-18" value="MySQL" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Zw-w0zwC9vYJDO_CgV66-20" value="DTSink" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="675" y="500" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Zw-w0zwC9vYJDO_CgV66-21" value="每一个CP完成时做一次落库" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="620" y="430" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Zw-w0zwC9vYJDO_CgV66-24" value="消息持久化" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="585" y="170" width="80" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
