@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-03-23T09:48:50.745Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="6_TG0s48ALuSfQKhWT7R" version="17.1.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-03-24T01:16:07.784Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="xpWF6h0TvbR-4dRzDN4W" version="17.1.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1426" dy="842" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -73,6 +73,11 @@
         <mxCell id="johIe5ZESay3oBGV9QlK-22" value="挂起主线程" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="630" y="320" width="80" height="20" as="geometry" />
         </mxCell>
+        <mxCell id="johIe5ZESay3oBGV9QlK-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#fff2cc;strokeColor=#d6b656;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="johIe5ZESay3oBGV9QlK-24">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="710" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="johIe5ZESay3oBGV9QlK-24" value="标记超时的DSP" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="560" y="180" width="80" height="80" as="geometry" />
         </mxCell>
@@ -98,6 +103,21 @@
         </mxCell>
         <mxCell id="johIe5ZESay3oBGV9QlK-30" value="返回" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="480" y="400" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="johIe5ZESay3oBGV9QlK-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#fff2cc;strokeColor=#d6b656;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="johIe5ZESay3oBGV9QlK-31" target="johIe5ZESay3oBGV9QlK-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="johIe5ZESay3oBGV9QlK-31" value="定时任务" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="690" y="10" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="johIe5ZESay3oBGV9QlK-33" value="扫描超时的DSP是否达到阈值" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="430" y="100" width="170" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="johIe5ZESay3oBGV9QlK-35" value="更新数据库状态剔除" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="710" y="180" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="johIe5ZESay3oBGV9QlK-36" value="&lt;span&gt;达到阈值&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="640" y="200" width="60" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
