@@ -1,1 +1,104 @@
-<mxfile host="app.diagrams.net" modified="2022-12-07T07:27:51.859Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" version="20.4.0" etag="3NDq7BFcogqlI4BOocIY" type="github"><diagram id="gWpfDHFNE3KKYQMcA2ZL">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-12-08T08:14:14.417Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="6kP0UuuA7rvY4cSs66wp" version="20.4.0" type="github">
+  <diagram id="gWpfDHFNE3KKYQMcA2ZL" name="第 1 页">
+    <mxGraphModel dx="1366" dy="816" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="KSl4At89BIPdw04Hjlh8-5" value="导入供应方给到的Excel" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="334" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KSl4At89BIPdw04Hjlh8-6" value="前置准备：" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;strokeWidth=18;" vertex="1" parent="1">
+          <mxGeometry x="40" y="15" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KSl4At89BIPdw04Hjlh8-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Verdana;fontSize=13;" edge="1" parent="1" source="KSl4At89BIPdw04Hjlh8-7" target="KSl4At89BIPdw04Hjlh8-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KSl4At89BIPdw04Hjlh8-7" value="上游导出包含EAS_ID的Excel" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fontFamily=Verdana;fontSize=13;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="70" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KSl4At89BIPdw04Hjlh8-9" value="提交到供应方" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=13;fontFamily=Verdana;" vertex="1" parent="1">
+          <mxGeometry x="200" y="360" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KSl4At89BIPdw04Hjlh8-12" value="施工时填充网关数据" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=13;fontFamily=Verdana;" vertex="1" parent="1">
+          <mxGeometry x="190" y="390" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KSl4At89BIPdw04Hjlh8-18" value="同步设备" style="whiteSpace=wrap;html=1;shape=partialRectangle;top=0;left=0;bottom=1;right=0;points=[[0,1],[1,1]];fillColor=none;align=center;verticalAlign=bottom;routingCenterY=0.5;snapToPoint=1;recursiveResize=0;autosize=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1};strokeColor=default;strokeWidth=1;fontFamily=Verdana;fontSize=13;shadow=1;sketch=1;" vertex="1" parent="1">
+          <mxGeometry x="835" y="19.68" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KSl4At89BIPdw04Hjlh8-19" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;rounded=0;fontFamily=Verdana;fontSize=13;" edge="1" parent="1" target="KSl4At89BIPdw04Hjlh8-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="790" y="79.68" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KSl4At89BIPdw04Hjlh8-20" value="同步房间" style="whiteSpace=wrap;html=1;shape=partialRectangle;top=0;left=0;bottom=1;right=0;points=[[0,1],[1,1]];fillColor=none;align=center;verticalAlign=bottom;routingCenterY=0.5;snapToPoint=1;recursiveResize=0;autosize=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1};strokeColor=default;strokeWidth=1;fontFamily=Verdana;fontSize=13;shadow=1;sketch=1;" vertex="1" parent="1">
+          <mxGeometry x="835" y="59.68" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KSl4At89BIPdw04Hjlh8-21" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;rounded=0;fontFamily=Verdana;fontSize=13;" edge="1" parent="1" target="KSl4At89BIPdw04Hjlh8-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="790" y="79.68" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KSl4At89BIPdw04Hjlh8-22" value="同步场景" style="whiteSpace=wrap;html=1;shape=partialRectangle;top=0;left=0;bottom=1;right=0;points=[[0,1],[1,1]];fillColor=none;align=center;verticalAlign=bottom;routingCenterY=0.5;snapToPoint=1;recursiveResize=0;autosize=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1};strokeColor=default;strokeWidth=1;fontFamily=Verdana;fontSize=13;shadow=1;sketch=1;" vertex="1" parent="1">
+          <mxGeometry x="835" y="99.68" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KSl4At89BIPdw04Hjlh8-23" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;rounded=0;fontFamily=Verdana;fontSize=13;" edge="1" parent="1" target="KSl4At89BIPdw04Hjlh8-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="790" y="79.68" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KSl4At89BIPdw04Hjlh8-28" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;startArrow=none;endArrow=none;rounded=0;fontFamily=Verdana;fontSize=13;" edge="1" parent="1" source="KSl4At89BIPdw04Hjlh8-30" target="KSl4At89BIPdw04Hjlh8-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KSl4At89BIPdw04Hjlh8-29" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;startArrow=none;endArrow=none;rounded=0;fontFamily=Verdana;fontSize=13;" edge="1" parent="1" source="KSl4At89BIPdw04Hjlh8-30" target="KSl4At89BIPdw04Hjlh8-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="&lt;span style=&quot;font-weight: 700;&quot;&gt;字典&lt;/span&gt;" treeRoot="1" id="KSl4At89BIPdw04Hjlh8-30">
+          <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};shadow=1;sketch=1;strokeColor=default;strokeWidth=1;fontFamily=Verdana;fontSize=13;" vertex="1" parent="1">
+            <mxGeometry x="200" y="500" width="120" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="KSl4At89BIPdw04Hjlh8-31" value="&lt;a style=&quot;box-sizing: inherit; background-color: rgb(245, 247, 250); cursor: pointer; color: rgb(32, 160, 255); text-decoration-line: none; font-family: &amp;quot;Helvetica Neue&amp;quot;, Helvetica, &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, Arial, sans-serif; font-size: 12px;&quot; class=&quot;link-type&quot; href=&quot;http://10.220.88.97:8081/#/dict/type/data/60&quot;&gt;&lt;span style=&quot;box-sizing: inherit;&quot;&gt;product_type&lt;/span&gt;&lt;/a&gt;" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};shadow=1;sketch=1;strokeColor=default;strokeWidth=1;fontFamily=Verdana;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="140" y="600" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KSl4At89BIPdw04Hjlh8-32" value="&lt;a style=&quot;box-sizing: inherit; background-color: rgb(245, 247, 250); cursor: pointer; color: rgb(51, 122, 183); text-decoration-line: none; font-family: &amp;quot;Helvetica Neue&amp;quot;, Helvetica, &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, Arial, sans-serif; font-size: 12px;&quot; class=&quot;link-type&quot; href=&quot;http://10.220.88.97:8081/#/dict/type/data/58&quot;&gt;&lt;span style=&quot;box-sizing: inherit;&quot;&gt;source_type&lt;/span&gt;&lt;/a&gt;" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};shadow=1;sketch=1;strokeColor=default;strokeWidth=1;fontFamily=Verdana;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="280" y="600" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KSl4At89BIPdw04Hjlh8-33" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Verdana;fontSize=13;entryX=0.674;entryY=-0.004;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="KSl4At89BIPdw04Hjlh8-30">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="420" as="sourcePoint" />
+            <mxPoint x="450" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KSl4At89BIPdw04Hjlh8-34" value="字典数据准备" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;shadow=1;sketch=1;strokeColor=default;strokeWidth=1;fontFamily=Verdana;fontSize=13;" connectable="0" vertex="1" parent="KSl4At89BIPdw04Hjlh8-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KSl4At89BIPdw04Hjlh8-35" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Verdana;fontSize=13;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="420" as="sourcePoint" />
+            <mxPoint x="490" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KSl4At89BIPdw04Hjlh8-36" value="资源准备" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;shadow=1;sketch=1;strokeColor=default;strokeWidth=1;fontFamily=Verdana;fontSize=13;" connectable="0" vertex="1" parent="KSl4At89BIPdw04Hjlh8-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KSl4At89BIPdw04Hjlh8-37" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;startArrow=none;endArrow=none;rounded=0;fontFamily=Verdana;fontSize=13;" edge="1" parent="1" source="KSl4At89BIPdw04Hjlh8-39" target="KSl4At89BIPdw04Hjlh8-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KSl4At89BIPdw04Hjlh8-38" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;startArrow=none;endArrow=none;rounded=0;fontFamily=Verdana;fontSize=13;" edge="1" parent="1" source="KSl4At89BIPdw04Hjlh8-39" target="KSl4At89BIPdw04Hjlh8-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="&lt;span style=&quot;font-weight: 700;&quot;&gt;场景&amp;amp;房间&lt;/span&gt;" treeRoot="1" id="KSl4At89BIPdw04Hjlh8-39">
+          <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};shadow=1;sketch=1;strokeColor=default;strokeWidth=1;fontFamily=Verdana;fontSize=13;" vertex="1" parent="1">
+            <mxGeometry x="450" y="500" width="120" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="KSl4At89BIPdw04Hjlh8-40" value="背景图" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};shadow=1;sketch=1;strokeColor=default;strokeWidth=1;fontFamily=Verdana;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="390" y="600" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KSl4At89BIPdw04Hjlh8-41" value="图标" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};shadow=1;sketch=1;strokeColor=default;strokeWidth=1;fontFamily=Verdana;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="530" y="600" width="100" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
