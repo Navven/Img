@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-12T07:00:06.897Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="zLZ96UGyVwhkifqrOXfy" version="20.4.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-12-12T07:17:27.015Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="xbji-ytwCpVY5FdZWxG8" version="20.4.0" type="github">
   <diagram id="gWpfDHFNE3KKYQMcA2ZL" name="第 1 页">
     <mxGraphModel dx="2193" dy="816" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
       <root>
@@ -183,7 +183,7 @@
         <mxCell id="KSl4At89BIPdw04Hjlh8-155" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Verdana;fontSize=13;fontColor=#000000;" edge="1" parent="1" source="KSl4At89BIPdw04Hjlh8-122" target="KSl4At89BIPdw04Hjlh8-154">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="KSl4At89BIPdw04Hjlh8-156" value="查询" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Verdana;fontColor=#000000;" vertex="1" connectable="0" parent="KSl4At89BIPdw04Hjlh8-155">
+        <mxCell id="KSl4At89BIPdw04Hjlh8-156" value="查询网关下的数据" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Verdana;fontColor=#000000;" vertex="1" connectable="0" parent="KSl4At89BIPdw04Hjlh8-155">
           <mxGeometry x="-0.0916" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -299,8 +299,58 @@
             <mxPoint x="384.47" y="850" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="KSl4At89BIPdw04Hjlh8-154" value="" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;sketch=1;strokeColor=default;strokeWidth=1;fontFamily=Verdana;fontSize=13;fontColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="650" y="850" width="120" height="60" as="geometry" />
+        <mxCell id="KSl4At89BIPdw04Hjlh8-158" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontFamily=Verdana;fontSize=13;fontColor=#000000;" edge="1" parent="1" source="KSl4At89BIPdw04Hjlh8-154">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KSl4At89BIPdw04Hjlh8-154" value="&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;设备/场景/房间&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;sketch=1;strokeColor=default;strokeWidth=1;fontFamily=Verdana;fontSize=13;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="660" y="850" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KSl4At89BIPdw04Hjlh8-160" value="True" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontFamily=Verdana;fontSize=13;fontColor=#000000;" edge="1" parent="1" source="KSl4At89BIPdw04Hjlh8-159">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="1120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KSl4At89BIPdw04Hjlh8-162" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontFamily=Verdana;fontSize=13;fontColor=#000000;" edge="1" parent="1" source="KSl4At89BIPdw04Hjlh8-159">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="840" y="1120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KSl4At89BIPdw04Hjlh8-163" value="False" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontFamily=Verdana;fontColor=#000000;" vertex="1" connectable="0" parent="KSl4At89BIPdw04Hjlh8-162">
+          <mxGeometry x="0.0747" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KSl4At89BIPdw04Hjlh8-159" value="是否具有环境传感设备" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;sketch=1;strokeColor=default;strokeWidth=1;fontFamily=Verdana;fontSize=13;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="660" y="980" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KSl4At89BIPdw04Hjlh8-165" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontFamily=Verdana;fontSize=13;fontColor=#000000;" edge="1" parent="1" source="KSl4At89BIPdw04Hjlh8-161">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="1240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KSl4At89BIPdw04Hjlh8-161" value="封装环境数据" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;sketch=1;strokeColor=default;strokeWidth=1;fontFamily=Verdana;fontSize=13;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="540" y="1120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KSl4At89BIPdw04Hjlh8-166" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontFamily=Verdana;fontSize=13;fontColor=#000000;" edge="1" parent="1" source="KSl4At89BIPdw04Hjlh8-164">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="1240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KSl4At89BIPdw04Hjlh8-164" value="调用高德Api环境数据" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;sketch=1;strokeColor=default;strokeWidth=1;fontFamily=Verdana;fontSize=13;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="780" y="1120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KSl4At89BIPdw04Hjlh8-168" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontFamily=Verdana;fontSize=13;fontColor=#000000;" edge="1" parent="1" source="KSl4At89BIPdw04Hjlh8-167">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="719.6315789473688" y="1390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KSl4At89BIPdw04Hjlh8-167" value="整合&lt;br&gt;(温湿度/AQI)" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;sketch=1;strokeColor=default;strokeWidth=1;fontFamily=Verdana;fontSize=13;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="660" y="1240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KSl4At89BIPdw04Hjlh8-170" value="&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;通过房屋所在项目的CODE查询项目所在区&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;sketch=1;strokeColor=default;strokeWidth=1;fontFamily=Verdana;fontSize=13;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="660" y="1390" width="120" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
