@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-07-12T09:39:32.365Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="ryqC632aPzgI08NN3aTT" version="21.3.7" type="github">
+<mxfile host="app.diagrams.net" modified="2023-07-12T09:43:45.535Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="BIkvfhv0BtKTH1J4MGrp" version="21.3.7" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="2261" dy="844" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2261" dy="869" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -139,6 +139,9 @@
         </mxCell>
         <mxCell id="dpf9FDvcnQvvSKj0nEbE-24" value="1.成功&lt;br&gt;2.失败 2.1 已注册(稍后再试) 2.2 已拉黑&lt;br&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="345" y="593" width="230" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="dpf9FDvcnQvvSKj0nEbE-25" value="1.我们这边有&lt;br&gt;1.1 正常跳转落地&lt;br&gt;2.我们没有&lt;br&gt;2.1 拉起房屋列表,发起绑定,调用接口&lt;br&gt;3.我们这有,但是钻石会没有&lt;br&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="190" y="668" width="220" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
