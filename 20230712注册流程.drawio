@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-07-12T09:36:23.496Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="HmanyqhASbMAJNEayrgX" version="21.3.7" type="github">
+<mxfile host="app.diagrams.net" modified="2023-07-12T09:39:32.365Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="ryqC632aPzgI08NN3aTT" version="21.3.7" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="2261" dy="844" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -91,7 +91,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="dpf9FDvcnQvvSKj0nEbE-8" value="退回小程序展示注册失败MSG" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-10" y="585" width="180" height="30" as="geometry" />
+          <mxGeometry x="-140" y="250" width="180" height="30" as="geometry" />
         </mxCell>
         <mxCell id="dpf9FDvcnQvvSKj0nEbE-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="dpf9FDvcnQvvSKj0nEbE-11">
           <mxGeometry relative="1" as="geometry">
@@ -130,6 +130,15 @@
         </mxCell>
         <mxCell id="dpf9FDvcnQvvSKj0nEbE-21" value="rooms.size &amp;gt; 0" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="500" y="160" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dpf9FDvcnQvvSKj0nEbE-22" value="1.你有房屋列表 size = 1&lt;br&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="125" y="598" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dpf9FDvcnQvvSKj0nEbE-23" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-50" y="680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dpf9FDvcnQvvSKj0nEbE-24" value="1.成功&lt;br&gt;2.失败 2.1 已注册(稍后再试) 2.2 已拉黑&lt;br&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="345" y="593" width="230" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
