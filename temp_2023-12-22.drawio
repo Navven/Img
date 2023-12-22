@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-22T07:11:43.130Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="3MbKPrUh_uCPpYe9Fcnu" version="21.6.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-22T12:33:16.048Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="JqGaVXRc6EeeJTtWSGVr" version="21.6.8" type="github">
   <diagram name="第 1 页" id="XhBtxtQenuhnz4CkXm2k">
     <mxGraphModel dx="1082" dy="717" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -33,6 +33,17 @@
         </mxCell>
         <mxCell id="A3eufy_ked7ZFcy1u16W-8" value="variable_str放四格的工单id" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="270" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A3eufy_ked7ZFcy1u16W-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="A3eufy_ked7ZFcy1u16W-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A3eufy_ked7ZFcy1u16W-12" value="四格推送已经关闭的工单" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A3eufy_ked7ZFcy1u16W-14" value="只给我他们的工单id" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="210" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
