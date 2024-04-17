@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-04-17T09:59:55.574Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="VvWmk5bb0l4l6x0VY9Yc" version="24.2.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-17T10:11:16.442Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="3LIO6817v54x_BhZ_vnY" version="24.2.5" type="github">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
     <mxGraphModel dx="2133" dy="801" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -150,7 +150,7 @@
         <mxCell id="Krxz8VrOtXeD-Itm55rz-57" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;历史记录&lt;br&gt;1.单聊云端历史消息查询&lt;br&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=#b85450;fillColor=#f8cecc;overflow=fill;" vertex="1" parent="1">
           <mxGeometry x="-25" y="70" width="180" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="Krxz8VrOtXeD-Itm55rz-61" value="&lt;div&gt;&lt;span style=&quot;font-weight: 700; text-align: center;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;font-weight: 700; text-align: center;&quot;&gt;&lt;div&gt;&lt;span style=&quot;font-weight: 700; text-align: center;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: 700; text-align: center;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: 700; text-align: center;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&amp;nbsp; &amp;nbsp;1.发送普通消息&lt;/span&gt;&lt;div style=&quot;font-weight: 700; text-align: center;&quot;&gt;2.发起单人专线电话&lt;br&gt;&amp;nbsp; &amp;nbsp; 3.三方机器人互动接口&lt;/div&gt;&lt;div style=&quot;font-weight: 700; text-align: center;&quot;&gt;4.文件上传&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=#b85450;fillColor=#f8cecc;overflow=fill;verticalAlign=middle;" vertex="1" parent="1">
+        <mxCell id="Krxz8VrOtXeD-Itm55rz-61" value="&lt;div&gt;&lt;span style=&quot;font-weight: 700;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;font-weight: 700;&quot;&gt;&lt;div&gt;&lt;span style=&quot;font-weight: 700;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: 700;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1.发送普通消息&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;/span&gt;&lt;div style=&quot;font-weight: 700;&quot;&gt;2.发起单人专线电话&lt;br&gt;&lt;font color=&quot;#3fd416&quot;&gt;3.三方机器人互动接口&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-weight: 700;&quot;&gt;4.文件上传&lt;br&gt;5.消息撤回&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=#b85450;fillColor=#f8cecc;overflow=fill;verticalAlign=middle;align=center;" vertex="1" parent="1">
           <mxGeometry x="240" y="750" width="180" height="180" as="geometry" />
         </mxCell>
         <mxCell id="Krxz8VrOtXeD-Itm55rz-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Krxz8VrOtXeD-Itm55rz-22" target="Krxz8VrOtXeD-Itm55rz-24">
@@ -163,6 +163,12 @@
         </mxCell>
         <mxCell id="Krxz8VrOtXeD-Itm55rz-72" value="云信鉴权" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-160" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Krxz8VrOtXeD-Itm55rz-74" value="Vertical Container" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-760" y="780" width="210" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="Krxz8VrOtXeD-Itm55rz-75" value="1.文件定时NOS清理(文件)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="Krxz8VrOtXeD-Itm55rz-74">
+          <mxGeometry x="25" y="60" width="160" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
