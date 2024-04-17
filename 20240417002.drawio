@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-04-17T10:38:14.588Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="sANAKz2HI8I3WhJxBJ5D" version="24.2.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-17T10:53:46.607Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="XVORwXdG_H-ra-eJZXi4" version="24.2.5" type="github">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
     <mxGraphModel dx="2133" dy="801" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -142,7 +142,7 @@
         <mxCell id="Krxz8VrOtXeD-Itm55rz-72" value="云信鉴权" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-160" y="360" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Krxz8VrOtXeD-Itm55rz-74" value="Vertical Container" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Krxz8VrOtXeD-Itm55rz-74" value="其他需要接入的API" style="swimlane;whiteSpace=wrap;html=1;labelBackgroundColor=#16c3d0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="-760" y="780" width="210" height="200" as="geometry" />
         </mxCell>
         <mxCell id="Krxz8VrOtXeD-Itm55rz-75" value="1.文件定时NOS清理(文件)&lt;br&gt;2.订阅坐席的在线状态&lt;br&gt;3.主动挂断正在进行的通话" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="Krxz8VrOtXeD-Itm55rz-74">
