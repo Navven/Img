@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0" version="29.1.1">
   <diagram name="Convenient Cabinet Full Flow" id="eOkrwxncjSsxPnRlKcLY">
-    <mxGraphModel dx="77816" dy="50382" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="79516" dy="51482" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -199,7 +199,7 @@
         <mxCell id="oUzI3hXsJoeca3BC_Mfu-61" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-54" target="oUzI3hXsJoeca3BC_Mfu-56" value="是" />
         <mxCell id="oUzI3hXsJoeca3BC_Mfu-62" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-54" target="oUzI3hXsJoeca3BC_Mfu-55" value="否" />
         <mxCell id="oUzI3hXsJoeca3BC_Mfu-63" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-56" target="oUzI3hXsJoeca3BC_Mfu-57" />
-        <mxCell id="oUzI3hXsJoeca3BC_Mfu-64" parent="1" style="text;fillColor=none;fontSize=20;fontStyle=1" value="6. 超时借用流程（Overdue）" vertex="1">
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-64" parent="1" style="text;fillColor=none;fontSize=20;fontStyle=1" value="6. 借用超时处理流程（Overdue）" vertex="1">
           <mxGeometry height="40" width="450" x="650" y="1300" as="geometry" />
         </mxCell>
         <mxCell id="oUzI3hXsJoeca3BC_Mfu-78" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="oUzI3hXsJoeca3BC_Mfu-66">
