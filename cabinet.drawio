@@ -67,7 +67,7 @@
         <mxCell id="DKAGVm4dyFhylUpcWI94-99" value="返回失败" style="rounded=1;whiteSpace=wrap;fillColor=#ffcccc" vertex="1" parent="1">
           <mxGeometry x="950" y="480" width="140" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="DKAGVm4dyFhylUpcWI94-100" value="生成 session_id → 返回授权" style="rounded=1;whiteSpace=wrap;fillColor=#ccffcc" vertex="1" parent="1">
+        <mxCell id="DKAGVm4dyFhylUpcWI94-100" value="生成 session_id → 返回授权(硬件开柜)" style="rounded=1;whiteSpace=wrap;fillColor=#ccffcc" vertex="1" parent="1">
           <mxGeometry x="650" y="590" width="260" height="60" as="geometry" />
         </mxCell>
         <mxCell id="DKAGVm4dyFhylUpcWI94-101" edge="1" parent="1" source="DKAGVm4dyFhylUpcWI94-93" target="DKAGVm4dyFhylUpcWI94-94">
@@ -89,36 +89,6 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="DKAGVm4dyFhylUpcWI94-107" value="否" edge="1" parent="1" source="DKAGVm4dyFhylUpcWI94-98" target="DKAGVm4dyFhylUpcWI94-99">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="DKAGVm4dyFhylUpcWI94-108" value="便民柜借用流程" style="text;fillColor=none;fontSize=18;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="100" y="650" width="300" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="DKAGVm4dyFhylUpcWI94-109" value="用户点击借用" style="rounded=1;whiteSpace=wrap" vertex="1" parent="1">
-          <mxGeometry x="100" y="700" width="200" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="DKAGVm4dyFhylUpcWI94-110" value="尝试锁定格口（0→1）" style="rounded=1;whiteSpace=wrap" vertex="1" parent="1">
-          <mxGeometry x="100" y="800" width="200" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="DKAGVm4dyFhylUpcWI94-111" value="失败 → 已被他人借用" style="rounded=1;whiteSpace=wrap;fillColor=#ffcccc" vertex="1" parent="1">
-          <mxGeometry x="350" y="800" width="200" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="DKAGVm4dyFhylUpcWI94-112" value="创建借用记录（status=1）" style="rounded=1;whiteSpace=wrap" vertex="1" parent="1">
-          <mxGeometry x="80" y="900" width="240" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="DKAGVm4dyFhylUpcWI94-113" value="返回 borrowId（借用成功）" style="rounded=1;whiteSpace=wrap;fillColor=#ccffcc" vertex="1" parent="1">
-          <mxGeometry x="80" y="1000" width="240" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="DKAGVm4dyFhylUpcWI94-114" edge="1" parent="1" source="DKAGVm4dyFhylUpcWI94-109" target="DKAGVm4dyFhylUpcWI94-110">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="DKAGVm4dyFhylUpcWI94-115" value="成功" edge="1" parent="1" source="DKAGVm4dyFhylUpcWI94-110" target="DKAGVm4dyFhylUpcWI94-112">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="DKAGVm4dyFhylUpcWI94-116" value="失败" edge="1" parent="1" source="DKAGVm4dyFhylUpcWI94-110" target="DKAGVm4dyFhylUpcWI94-111">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="DKAGVm4dyFhylUpcWI94-117" edge="1" parent="1" source="DKAGVm4dyFhylUpcWI94-112" target="DKAGVm4dyFhylUpcWI94-113">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
