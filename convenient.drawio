@@ -1,9 +1,236 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0" version="28.2.9">
-  <diagram name="第 1 页" id="eOkrwxncjSsxPnRlKcLY">
-    <mxGraphModel>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0" version="29.1.1">
+  <diagram name="Convenient Cabinet Full Flow" id="eOkrwxncjSsxPnRlKcLY">
+    <mxGraphModel dx="72716" dy="47082" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-1" parent="1" style="text;fillColor=none;strokeColor=none;fontSize=26;fontStyle=1" value="便民柜全业务流程（借用 → 开柜 → 归还 → 取消 → 超时）" vertex="1">
+          <mxGeometry height="50" width="900" x="350" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-2" parent="1" style="text;fillColor=none;fontSize=20;fontStyle=1" value="1. 借用流程（Borrow）" vertex="1">
+          <mxGeometry height="40" width="400" x="100" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-3" parent="1" style="rounded=1;whiteSpace=wrap" value="用户点击借用" vertex="1">
+          <mxGeometry height="60" width="220" x="100" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-4" parent="1" style="rounded=1;whiteSpace=wrap" value="尝试锁定格口\n（borrow_status 0 → 1）" vertex="1">
+          <mxGeometry height="80" width="250" x="85" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-5" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#ffcccc" value="失败 → 已被他人借用" vertex="1">
+          <mxGeometry height="60" width="200" x="380" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-6" parent="1" style="rounded=1;whiteSpace=wrap" value="创建借用记录\nborrow_log:\nstatus=1(借用中)\nopened=0\nis_overdue=0" vertex="1">
+          <mxGeometry height="100" width="280" x="70" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-7" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#ccffcc" value="返回 borrowId（借用成功）" vertex="1">
+          <mxGeometry height="60" width="280" x="70" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-8" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-3" target="oUzI3hXsJoeca3BC_Mfu-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-9" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-4" target="oUzI3hXsJoeca3BC_Mfu-6" value="成功">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-10" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-4" target="oUzI3hXsJoeca3BC_Mfu-5" value="失败">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-11" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-6" target="oUzI3hXsJoeca3BC_Mfu-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-12" parent="1" style="text;fillColor=none;fontSize=20;fontStyle=1" value="2. 用户开柜流程（User Open）" vertex="1">
+          <mxGeometry height="40" width="450" x="650" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-13" parent="1" style="rounded=1;whiteSpace=wrap" value="用户点击“开柜”（携带 borrowId）" vertex="1">
+          <mxGeometry height="60" width="260" x="650" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-14" parent="1" style="rhombus;whiteSpace=wrap" value="借用记录是否存在？" vertex="1">
+          <mxGeometry height="80" width="230" x="665" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-15" parent="1" style="rounded=1;fillColor=#ffcccc" value="拒绝开柜\n(borrowId 无效)" vertex="1">
+          <mxGeometry height="60" width="200" x="930" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-16" parent="1" style="rhombus;whiteSpace=wrap" value="borrow_log.status==1（借用中）？" vertex="1">
+          <mxGeometry height="80" width="260" x="650" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-17" parent="1" style="rounded=1;fillColor=#ffcccc" value="拒绝开柜\n(非借用中)" vertex="1">
+          <mxGeometry height="60" width="180" x="940" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-18" parent="1" style="rounded=1;whiteSpace=wrap" value="检查节流\n(用户+格口 5 秒)" vertex="1">
+          <mxGeometry height="60" width="260" x="650" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-19" parent="1" style="rounded=1;whiteSpace=wrap" value="调用 IoT 开柜" vertex="1">
+          <mxGeometry height="60" width="260" x="650" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-20" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#ccffcc" value="IoT 开柜成功 → 更新\nborrow_log.opened=1" vertex="1">
+          <mxGeometry height="80" width="300" x="630" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-21" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-13" target="oUzI3hXsJoeca3BC_Mfu-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-22" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-14" target="oUzI3hXsJoeca3BC_Mfu-16" value="是">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-23" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-14" target="oUzI3hXsJoeca3BC_Mfu-15" value="否">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-24" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-16" target="oUzI3hXsJoeca3BC_Mfu-18" value="是">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-25" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-16" target="oUzI3hXsJoeca3BC_Mfu-17" value="否">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-26" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-18" target="oUzI3hXsJoeca3BC_Mfu-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-27" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-19" target="oUzI3hXsJoeca3BC_Mfu-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-28" parent="1" style="text;fillColor=none;fontSize=20;fontStyle=1" value="3. 管理员开柜流程（Admin Open）" vertex="1">
+          <mxGeometry height="40" width="450" x="100" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-29" parent="1" style="rounded=1;whiteSpace=wrap" value="管理员点击开柜" vertex="1">
+          <mxGeometry height="60" width="240" x="100" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-30" parent="1" style="rhombus;whiteSpace=wrap" value="该格口有未归还借用？\n(borrow_log.status=1)" vertex="1">
+          <mxGeometry height="80" width="260" x="90" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-31" parent="1" style="rounded=1;fillColor=#ffcccc" value="拒绝管理员开柜\n（借用中禁止强开）" vertex="1">
+          <mxGeometry height="60" width="260" x="400" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-32" parent="1" style="rounded=1" value="检查节流" vertex="1">
+          <mxGeometry height="60" width="200" x="120" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-33" parent="1" style="rounded=1" value="调用 IoT 开柜" vertex="1">
+          <mxGeometry height="60" width="200" x="120" y="950" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-34" parent="1" style="rounded=1;fillColor=#ccffcc" value="开柜成功" vertex="1">
+          <mxGeometry height="60" width="200" x="120" y="1040" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-35" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-29" target="oUzI3hXsJoeca3BC_Mfu-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-36" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-30" target="oUzI3hXsJoeca3BC_Mfu-32" value="否（无借用）">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-37" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-30" target="oUzI3hXsJoeca3BC_Mfu-31" value="是">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-38" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-32" target="oUzI3hXsJoeca3BC_Mfu-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-39" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-33" target="oUzI3hXsJoeca3BC_Mfu-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-40" parent="1" style="text;fillColor=none;fontSize=20;fontStyle=1" value="4. 归还流程（Return）" vertex="1">
+          <mxGeometry height="40" width="300" x="650" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-41" parent="1" style="rounded=1" value="用户点击归还" vertex="1">
+          <mxGeometry height="60" width="200" x="650" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-42" parent="1" style="rhombus;whiteSpace=wrap" value="borrow_log.status==1？" vertex="1">
+          <mxGeometry height="80" width="250" x="625" y="980" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-43" parent="1" style="rounded=1;fillColor=#ffcccc" value="拒绝归还\n（非借用中）" vertex="1">
+          <mxGeometry height="60" width="200" x="950" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-44" parent="1" style="rounded=1" value="重置格口 borrow_status=0" vertex="1">
+          <mxGeometry height="60" width="250" x="625" y="1090" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-45" parent="1" style="rounded=1;fillColor=#ccffcc" value="borrow_log.status=2（已归还）" vertex="1">
+          <mxGeometry height="60" width="260" x="620" y="1180" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-46" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-41" target="oUzI3hXsJoeca3BC_Mfu-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-47" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-42" target="oUzI3hXsJoeca3BC_Mfu-44" value="是">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-48" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-42" target="oUzI3hXsJoeca3BC_Mfu-43" value="否">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-49" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-44" target="oUzI3hXsJoeca3BC_Mfu-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-50" parent="1" style="text;fillColor=none;fontSize=20;fontStyle=1" value="5. 取消借用流程（Cancel）" vertex="1">
+          <mxGeometry height="40" width="450" x="100" y="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-72" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="oUzI3hXsJoeca3BC_Mfu-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-51" parent="1" style="rounded=1" value="用户点击取消借用" vertex="1">
+          <mxGeometry height="60" width="260" x="100" y="1250" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-73" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="oUzI3hXsJoeca3BC_Mfu-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-76" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="oUzI3hXsJoeca3BC_Mfu-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-52" parent="1" style="rhombus" value="借用记录是否存在？" vertex="1">
+          <mxGeometry height="80" width="230" x="100" y="1340" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-53" parent="1" style="rounded=1;fillColor=#ffcccc" value="拒绝取消" vertex="1">
+          <mxGeometry height="60" width="200" x="360" y="1350" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-74" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="oUzI3hXsJoeca3BC_Mfu-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-77" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="oUzI3hXsJoeca3BC_Mfu-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-54" parent="1" style="rhombus" value="borrow_log.opened==0？\n(未开柜才可取消)" vertex="1">
+          <mxGeometry height="80" width="260" x="85" y="1450" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-55" parent="1" style="rounded=1;fillColor=#ffcccc" value="拒绝取消\n（已开柜）" vertex="1">
+          <mxGeometry height="60" width="200" x="370" y="1460" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-75" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="oUzI3hXsJoeca3BC_Mfu-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-56" parent="1" style="rounded=1" value="重置格口 borrow_status=0" vertex="1">
+          <mxGeometry height="60" width="260" x="85" y="1560" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-57" parent="1" style="rounded=1;fillColor=#ccffcc" value="borrow_log.status=3（已取消）" vertex="1">
+          <mxGeometry height="60" width="260" x="85" y="1650" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-58" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-51" target="oUzI3hXsJoeca3BC_Mfu-52" />
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-59" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-52" target="oUzI3hXsJoeca3BC_Mfu-54" value="是" />
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-60" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-52" target="oUzI3hXsJoeca3BC_Mfu-53" value="否" />
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-61" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-54" target="oUzI3hXsJoeca3BC_Mfu-56" value="是" />
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-62" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-54" target="oUzI3hXsJoeca3BC_Mfu-55" value="否" />
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-63" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-56" target="oUzI3hXsJoeca3BC_Mfu-57" />
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-64" parent="1" style="text;fillColor=none;fontSize=20;fontStyle=1" value="6. 超时借用流程（Overdue）" vertex="1">
+          <mxGeometry height="40" width="450" x="650" y="1300" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-78" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="oUzI3hXsJoeca3BC_Mfu-66">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-65" parent="1" style="rounded=1" value="XXL-JOB 每天检查未归还借用" vertex="1">
+          <mxGeometry height="40" width="320" x="650" y="1360" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-79" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="oUzI3hXsJoeca3BC_Mfu-67">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-80" connectable="0" parent="oUzI3hXsJoeca3BC_Mfu-79" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="否" vertex="1">
+          <mxGeometry relative="1" x="-0.1684" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-66" parent="1" style="rhombus" value="是否 &gt;24h ?" vertex="1">
+          <mxGeometry height="80" width="230" x="650" y="1450" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-67" parent="1" style="rounded=1" value="保持状态不变" vertex="1">
+          <mxGeometry height="60" width="200" x="920" y="1460" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-68" parent="1" style="rounded=1;fillColor=#ffebcc" value="标记超时未归还,发送超时短信" vertex="1">
+          <mxGeometry height="70" width="320" x="640" y="1570" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-69" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-65" target="oUzI3hXsJoeca3BC_Mfu-66" />
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-70" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-66" target="oUzI3hXsJoeca3BC_Mfu-68" value="是" />
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-71" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-66" target="oUzI3hXsJoeca3BC_Mfu-67" value="否" />
+        <mxCell id="oUzI3hXsJoeca3BC_Mfu-81" edge="1" parent="1" source="oUzI3hXsJoeca3BC_Mfu-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.391;entryY=-0.014;entryDx=0;entryDy=0;entryPerimeter=0;" target="oUzI3hXsJoeca3BC_Mfu-68">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
